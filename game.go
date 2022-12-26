@@ -20,7 +20,7 @@ type Mage struct {
 	ang Rad
 }
 type Rang struct {
-	owner si
+	owner int
 	pos   Vec2
 	vel   Vec2
 	ang   Rad
