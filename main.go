@@ -20,10 +20,10 @@ type Micros = m.Micros
 
 var MicrosGet = m.MicrosGet
 
-type Rad = et.Rad
-type Vec2 = et.Vec2
-type Verts = et.Verts
-type Trigs = et.Trigs
+type rad = et.Rad
+type v2 = et.Vec2
+type verts = et.Verts
+type trigs = et.Trigs
 
 var V2 = et.V2
 

@@ -11,28 +11,28 @@ const (
 
 type Pilar struct {
 	hp  f64
-	pos Vec2
+	pos v2
 }
 type Mage struct {
 	// hp  f64
-	pos Vec2
-	vel Vec2
-	ang Rad
+	pos v2
+	vel v2
+	ang rad
 }
 type Rang struct {
 	owner int
-	pos   Vec2
-	vel   Vec2
-	ang   Rad
+	pos   v2
+	vel   v2
+	ang   rad
 	ccw   bool
 }
 type Fire struct {
-	pos   Vec2
-	vel   Vec2
+	pos   v2
+	vel   v2
 	spawn Micros
 }
 type Asd struct {
-	pos  Vec2
+	pos  v2
 	size f64
 }
 type Game struct {

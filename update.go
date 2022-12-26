@@ -34,7 +34,7 @@ func (g *Game) Update() {
 	if et.ButtonDown(et.ButtonL) {
 		dir := g.mages[0].ang.Vec2()
 		p, v := dir.Mul1(50).Add(g.mages[0].pos), dir.Mul1(5)
-		g.rangs = append(g.rangs, Rang{0, p, v, Rad(g.rng.Normal64() * m.Tau), false})
+		g.rangs = append(g.rangs, Rang{0, p, v, rad(g.rng.Normal64() * m.Tau), false})
 	}
 
 	// Fire
@@ -52,7 +52,7 @@ func (g *Game) Update() {
 		g.rangs[i].vel = dlt.MagSet(.1).Add(r.vel).
 			Sub(dlt.Rot90().MagSet(.01).Project(r.vel))
 		g.rangs[i].pos = r.pos.Add(r.vel)
-		g.rangs[i].ang += Rad((m.Tau + r.vel.Mag()*2) / 60 * m.BToS(r.ccw))
+		g.rangs[i].ang += rad((m.Tau + r.vel.Mag()*2) / 60 * m.BToS(r.ccw))
 		if ownerPos.Dst(r.pos) < MageR+RangR {
 			bound := len(g.rangs) - 1
 			g.rangs[i] = g.rangs[bound]

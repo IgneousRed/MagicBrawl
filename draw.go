@@ -6,23 +6,23 @@ import (
 )
 
 // Trig data
-var basic, mage, rang Trigs
+var basic, mage, rang trigs
 
 func init() {
-	basic.Verts = make(Verts, 3)
+	basic.Verts = make(verts, 3)
 	for i := range basic.Verts {
 		basic.Verts[i] = m.Deg(f64(i) * 120).Vec2()
 	}
 	basic.Inds = []u16{0, 1, 2}
 
-	mage.Verts = Verts{
+	mage.Verts = verts{
 		m.Deg(0).Vec2().Mul1(15),
 		m.Deg(160).Vec2().Mul1(15),
 		m.Deg(200).Vec2().Mul1(15),
 	}
 	mage.Inds = basic.Inds
 
-	rang.Verts = make(Verts, 6)
+	rang.Verts = make(verts, 6)
 	for i := range rang.Verts {
 		rang.Verts[i] = m.Deg(f64(i) * 60).Vec2().Mul1(f64(5 + i%2*15))
 	}
@@ -49,7 +49,7 @@ func (g *Game) Draw(scr *et.Image) {
 		clr := et.Red
 		clr.A = 128
 		for _, s := range qwe {
-			et.CamDrawTriangles(scr, basic.Transform1(f.pos, Rad(s*dltTime), 20), clr)
+			et.CamDrawTriangles(scr, basic.Transform1(f.pos, rad(s*dltTime), 20), clr)
 		}
 	}
 	for _, r := range g.rangs {
