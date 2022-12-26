@@ -10,17 +10,17 @@ const (
 )
 
 type Pilar struct {
-	hp  float64
+	hp  f64
 	pos Vec2
 }
 type Mage struct {
-	// hp  float64
+	// hp  f64
 	pos Vec2
 	vel Vec2
 	ang Rad
 }
 type Rang struct {
-	owner int
+	owner si
 	pos   Vec2
 	vel   Vec2
 	ang   Rad
@@ -33,7 +33,7 @@ type Fire struct {
 }
 type Asd struct {
 	pos  Vec2
-	size float64
+	size f64
 }
 type Game struct {
 	// Update

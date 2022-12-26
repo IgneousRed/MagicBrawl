@@ -11,9 +11,9 @@ var basic, mage, rang Trigs
 func init() {
 	basic.Verts = make(Verts, 3)
 	for i := range basic.Verts {
-		basic.Verts[i] = m.Deg(float64(i) * 120).Vec2()
+		basic.Verts[i] = m.Deg(f64(i) * 120).Vec2()
 	}
-	basic.Inds = []uint16{0, 1, 2}
+	basic.Inds = []u16{0, 1, 2}
 
 	mage.Verts = Verts{
 		m.Deg(0).Vec2().Mul1(15),
@@ -24,13 +24,13 @@ func init() {
 
 	rang.Verts = make(Verts, 6)
 	for i := range rang.Verts {
-		rang.Verts[i] = m.Deg(float64(i) * 60).Vec2().Mul1(float64(5 + i%2*15))
+		rang.Verts[i] = m.Deg(f64(i) * 60).Vec2().Mul1(f64(5 + i%2*15))
 	}
-	rang.Inds = []uint16{0, 2, 4, 0, 1, 2, 2, 3, 4, 4, 5, 0}
+	rang.Inds = []u16{0, 2, 4, 0, 1, 2, 2, 3, 4, 4, 5, 0}
 }
 
 // Other data
-var qwe [4]float64
+var qwe [4]f64
 
 func init() {
 	speed := m.Pi
@@ -45,7 +45,7 @@ func (g *Game) Draw(scr *et.Image) {
 
 	// }
 	for _, f := range g.fires {
-		dltTime := float64(MicrosGet()) / 1000
+		dltTime := f64(MicrosGet()) / 1000
 		clr := et.Red
 		clr.A = 128
 		for _, s := range qwe {
