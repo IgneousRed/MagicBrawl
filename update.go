@@ -12,8 +12,8 @@ func (g *Game) Update() {
 		m.BToF(et.KeysPressed(et.KeyUp))-m.BToF(et.KeysPressed(et.KeyDown)),
 	)
 	camMove = camMove.Add(V2(
-		m.BToF(et.Cursor().X >= et.WindowSize().X-10)-m.BToF(et.Cursor().X < 10),
-		m.BToF(et.Cursor().Y >= et.WindowSize().Y-10)-m.BToF(et.Cursor().Y < 10),
+		m.BToF(et.Cursor()[0] >= et.WindowSize()[0]-10)-m.BToF(et.Cursor()[0] < 10),
+		m.BToF(et.Cursor()[1] >= et.WindowSize()[1]-10)-m.BToF(et.Cursor()[1] < 10),
 	))
 	et.CamTrans(camMove, 0, m.Pow(2, et.Wheel()))
 
