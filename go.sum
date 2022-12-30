@@ -5,6 +5,8 @@ github.com/IgneousRed/EduTen v0.0.0-20221215102410-10c6164e6968 h1:I3MMbiJCok1C6
 github.com/IgneousRed/EduTen v0.0.0-20221215102410-10c6164e6968/go.mod h1:w//0tuqFteUZkWueXXb7kSuNjlythNa4tZY44ftrpj0=
 github.com/IgneousRed/EduTen v0.0.0-20221226005247-8a20071de191 h1:01M/6ymOl0h4mgRb3ZmA+jPk3TPc/UBLRO0EeKXEMBA=
 github.com/IgneousRed/EduTen v0.0.0-20221226005247-8a20071de191/go.mod h1:dy3SOleZjF+YSWsaydOj+ppqkF0cplYQZaWHwJmXhk0=
+github.com/IgneousRed/EduTen v0.0.0-20221230152321-9f2f800224f7 h1:TitlNDElMcH8oEEl7feey7cO/zMKjpvlXB9e5wYVz/U=
+github.com/IgneousRed/EduTen v0.0.0-20221230152321-9f2f800224f7/go.mod h1:/kd1KsbGwrFVmybYqVSkQ4rW+6xgV65xYmn3UXlwX1E=
 github.com/IgneousRed/gomisc v0.0.0-20221207133117-802c4bae123a h1:6V3lVEjB4J7zDaHGp3jnMLuoyQp6/FMK889Qa17Rsmg=
 github.com/IgneousRed/gomisc v0.0.0-20221207133117-802c4bae123a/go.mod h1:giHZkQtQcGNGXVzGoYowo3Vc5KT6q4xH8u/h3hBrkBY=
 github.com/IgneousRed/gomisc v0.0.0-20221215101659-121fe47803f5 h1:aadrNA2yN0vkXogaWLAv7UpaSOoL2VNZGr9bfm0K7nc=
@@ -56,6 +58,8 @@ golang.org/x/exp/shiny v0.0.0-20221212164502-fae10dda9338 h1:ZI4kYzQNB8ONUMJE/24
 golang.org/x/exp/shiny v0.0.0-20221212164502-fae10dda9338/go.mod h1:UH99kUObWAZkDnWqppdQe5ZhPYESUw8I0zVV1uWBR+0=
 golang.org/x/exp/shiny v0.0.0-20221217163422-3c43f8badb15 h1:QVKOKSjL7WX2zeb8TyoUUlGb16JOawXhqegQKeP7Rac=
 golang.org/x/exp/shiny v0.0.0-20221217163422-3c43f8badb15/go.mod h1:UH99kUObWAZkDnWqppdQe5ZhPYESUw8I0zVV1uWBR+0=
+golang.org/x/exp/shiny v0.0.0-20221229233502-02c3fc3b3eb4 h1:v5qPkKVvnS+rk6x4vpgjaZQHgxGQr3FFGYau28/Gj6Y=
+golang.org/x/exp/shiny v0.0.0-20221229233502-02c3fc3b3eb4/go.mod h1:UH99kUObWAZkDnWqppdQe5ZhPYESUw8I0zVV1uWBR+0=
 golang.org/x/image v0.0.0-20190227222117-0694c2d4d067/go.mod h1:kZ7UVZpmo3dzQBMxlp+ypCbDeSB+sBbTgSJuh5dn5js=
 golang.org/x/image v0.0.0-20190802002840-cff245a6509b/go.mod h1:FeLwcggjj3mMvU+oOTbSwawSJRM1uh48EjtB4UJZlP0=
 golang.org/x/image v0.1.0/go.mod h1:iyPr49SD/G/TBxYVB/9RRtGUT5eNbo2u4NamWeQcD5c=

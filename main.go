@@ -17,15 +17,14 @@ type f32 = float32
 type f64 = float64
 
 type Micros = m.Micros
+type rad = m.Rad
+type v2 = m.Vector2
 
 var MicrosGet = m.MicrosGet
+var V2 = m.Vec2
 
-type rad = et.Rad
-type v2 = et.Vec2
 type verts = et.Verts
 type trigs = et.Trigs
-
-var V2 = et.V2
 
 func main() {
 	// f, err := et.FontNew("FiraCode-Medium.ttf")
