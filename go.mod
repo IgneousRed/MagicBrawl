@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/IgneousRed/EduTen v0.0.0-20221226005247-8a20071de191
-	github.com/IgneousRed/gomisc v0.0.0-20221226231600-be46d7a023be
+	github.com/IgneousRed/gomisc v0.0.0-20221230152132-162eac5caf34
 )
 
 require (
