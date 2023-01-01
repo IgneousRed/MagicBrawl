@@ -33,8 +33,8 @@ func (g *Game) Update() {
 	// Rang
 	if et.ButtonDown(et.ButtonL) {
 		dir := g.mages[0].ang.Vec2()
-		p, v := dir.Mul1(50).Add(g.mages[0].pos), dir.Mul1(5)
-		g.rangs = append(g.rangs, Rang{0, p, v, rad(g.rng.Normal64() * m.Tau), false})
+		p, a := dir.Mul1(50).Add(g.mages[0].pos), rad(g.rng.Normal64()*m.Tau)
+		g.rangs = append(g.rangs, Rang{0, p, dir.Mul1(5), a, false})
 	}
 
 	// Fire
